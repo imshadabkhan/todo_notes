@@ -7,6 +7,7 @@ import 'package:todo_notes/model/addtolist_model.dart';
 import 'package:todo_notes/model/notes_model.dart';
 import 'package:todo_notes/view/home_view/home.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:todo_notes/view/starting/starting.dart';
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
       ),
        darkTheme: ThemeData.dark(),
        themeMode: _themeController.theme_value.value?ThemeMode.light:ThemeMode.dark,
-       home: Home_View(),
+       home: Splashscreen(),
     );
   }
 }

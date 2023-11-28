@@ -165,15 +165,14 @@ class _Home_ViewState extends State<Home_View> {
                                                                 Boxes.getData()
                                                                     .getAt(
                                                                         index);
-                                                            box?.title =
-                                                                dialogBoxTitleController
-                                                                    .text;
+                                                            box?.title = dialogBoxTitleController.text;
                                                             box?.save();
                                                             // Replace 'index' with the correct index
                                                             // Update the title and save
 
                                                             Navigator.pop(
                                                                 context); //
+                                                            dialogBoxTitleController.clear();
                                                           },
                                                           child: Text("Edit"),
                                                         ),
